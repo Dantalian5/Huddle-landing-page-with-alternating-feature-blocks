@@ -1,0 +1,44 @@
+// Navigation Bar
+.navbar{
+    justify-content: space-between;
+    &__logo__img{
+            width: auto;
+            height: 70%;
+    }
+    &__btn{
+        background: $color-n-white;
+        padding-inline: 5%;
+        border-radius: 2rem;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+        font: 700 1em $font-OpenSans;
+        color: $color-s-Very-Dark-Cyan;
+        text-align: center;
+    }
+}
+// Buttons: 
+.btn{
+    background: $color-p-Pink;
+    border-radius: 5rem;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    font: 700 1em $font-OpenSans;
+    color: $color-n-white;
+    //letter-spacing: -0.04em;
+} 
+
+@media (hover: hover){
+    .navbar__btn:active{
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+            transform: scale(.98);
+    }
+    .navbar__btn:hover{
+        color: $color-s-Grayish-Blue;
+    }
+    .btn:active{
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+        transform: scale(.98);
+    }
+    .btn:hover{
+        background: transparentize($color: $color-p-Pink, $amount: .5);
+    }
+    
+}

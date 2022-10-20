@@ -1,0 +1,41 @@
+// OOCSS based system of structure blocks and grids
+// 
+
+// standarts block model
+.blck-fw{
+    width: 100%;
+    height: auto;
+}
+.blck-fh{
+    width: auto;
+    height: 100%;
+}
+.blck-full{
+    width: 100%;
+    height: 100%;
+}
+// section block model
+.blck-base{  //base structure of sections block components
+    max-width: 90rem;
+    min-width: 23.125rem;
+    padding-inline: 5%; // or 4%
+    padding-block: 2rem;  // or 2rem
+}
+// grid and flex structure
+.grid{    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18.75rem, auto));
+    grid-gap: 2.5rem;
+    align-items: center;
+}
+.flex-row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flex-clmn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

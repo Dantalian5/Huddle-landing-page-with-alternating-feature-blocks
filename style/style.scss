@@ -1,0 +1,16 @@
+// File : main.scss (Default Theme)
+
+// Initialize style:
+    @import 'rsc/reset';
+    @import 'rsc/normalize.css';
+
+// Import Mixins, functions and variables:
+    @import 'rsc/mixins';
+
+// Mobile first, SMACSS structure load:
+    @import './base';
+    @import './blocks';
+    @import './layout';
+    @import './module';
+    @import './state';
+    @import './theme';

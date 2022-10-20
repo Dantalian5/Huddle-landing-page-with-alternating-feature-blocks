@@ -1,0 +1,71 @@
+// Layout file-partial: style SMACSS
+// symbology:
+// str__: structure, skn__: skin-style, --blck: block;
+
+// body
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $color-n-black;
+}
+// header
+.l-header{
+    background: url(./img/bg-hero-mobile.svg), $color-s-Very-Pale-Cyan;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    font-size: .65rem;
+
+    &__navbar--wrapper{
+        height: 1.5rem;
+    }
+    &__hero--wrapper{        
+        padding: 1rem;
+        margin-top: 2.5rem;
+    }
+    &__info--wrapper{
+        text-align: center;
+        max-width: 32.5rem;
+        & > *{
+            margin-block: 1rem;
+        }
+    }
+    &__btn--wrapper{
+        width: 15rem;
+        height: 2.5rem;
+        font-size: .8125rem;
+    }
+}
+
+
+
+
+
+// Responsive:
+@media only screen and (min-width: 62.5rem) {
+    .l-header{    
+        background: url(../../images/bg-hero-desktop.svg), $color-s-Very-Pale-Cyan;
+        background-size: 100% auto;
+        background-repeat: no-repeat; 
+        font-size: .875rem;
+        &__navbar--wrapper{
+            height: 3rem;
+        }
+        &__hero--wrapper{        
+            padding-inline: 0;
+        }
+        &__info--wrapper{
+            text-align: start;
+            align-items: start;
+        }
+        &__btn--wrapper{
+            width: 17.5rem;
+            height: 3.5rem;
+            font-size: 0.9rem;
+        }
+    }
+    
+    
+}
